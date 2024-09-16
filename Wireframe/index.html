@@ -1,13 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-</body>
-</html
+    <header>
+      <h1>Git Version Control System</h1>
+    </header>
+
+    <main class="container">
+      <div class="article article-featured">
+        <input type="checkbox" id="read-more-toggle-1" />
+        <img src="images/git.png" class="article-image" alt="git" />
+        <h2>What is Git?</h2>
+        <p>
+          Git is a distributed version control system designed to help
+          developers track changes in source code during software development.
+          It allows multiple developers to collaborate on a project by managing
+          code versions, merging changes, and reverting to previous states if
+          necessary. Here's a breakdown of key features and concepts:
+        </p>
+        <p>Key Features of Git:</p>
+
+        <span class="more-text">
+          <ul class="indent-list">
+            <li>
+              Version Control: Git tracks changes made to files over time,
+              allowing you to review or revert to earlier versions of a project.
+            </li>
+            <li>
+              Distributed: Every developer has a complete copy of the
+              repository, including its history, making Git highly reliable and
+              decentralized.
+            </li>
+            <li>
+              Branching and Merging: Developers can create branches to work on
+              new features or fixes without affecting the main codebase. Changes
+              can be merged back into the main branch when ready.
+            </li>
+            <li>
+              Collaboration: Git supports collaborative development by allowing
+              multiple people to work on the same project. It resolves conflicts
+              when changes overlap.
+            </li>
+            <li>
+              Staging Area: Git has a staging area where changes can be reviewed
+              before they are committed to the repository.
+            </li>
+          </ul>
+        </span>
+        <label for="read-more-toggle-1" class="read-more-btn"></label>
+      </div>
+
+      <div class="article article-half-row">
+        <input type="checkbox" id="read-more-toggle-2" />
+
+        <img src="images/Git-Developers.jpg" class="article-image" alt="git" />
+        <h2>Why do developers need Git?</h2>
+        <p>
+          Developers need Git for efficient version control, collaboration, and
+          project management. It tracks changes, allowing developers to revert
+          to previous versions if needed. Git’s
+          <strong>branching</strong> system lets developers work on separate
+          features or fixes without disrupting the main codebase, enabling safe
+          experimentation. Once changes are ready, they can be
+          <strong>merged</strong> back into the main project.
+        </p>
+
+        <span class="more-text">
+          <p>
+            Git also facilitates <strong>collaboration</strong>, enabling
+            multiple developers to work simultaneously, even from different
+            locations. It helps resolve conflicts when changes overlap and
+            provides a full <strong>history</strong> of who made changes and
+            why, improving accountability.
+          </p>
+          <p>
+            Git’s <strong>distributed nature</strong> ensures that every
+            developer has a full copy of the project, serving as a backup, and
+            preventing data loss. Additionally, Git integrates well with
+            <strong>Continuous Integration/Deployment</strong> pipelines,
+            ensuring efficient, high-quality code delivery.
+          </p>
+          <p>
+            Its widespread adoption and open-source nature make it a standard
+            tool in modern software development.
+          </p>
+        </span>
+        <label for="read-more-toggle-2" class="read-more-btn"></label>
+      </div>
+
+      <div class="article article-half-row">
+        <input type="checkbox" id="read-more-toggle-3" />
+
+        <img src="images/git-branches.jpeg" class="article-image" alt="git" />
+        <h2>What is a branch in Git?</h2>
+        <p>
+          A <strong>branch</strong> in Git is a separate line of development
+          that allows you to work on changes independently from the main
+          project. It creates a "snapshot" of the code at a specific point,
+          enabling you to work on new features, bug fixes, or experiments
+          without affecting the main codebase (usually called the
+          <strong>main</strong> or <strong>master</strong>
+          branch).
+        </p>
+        <p>Branches are commonly used for:</p>
+        <span class="more-text">
+          <ul class="indent-list">
+            <li>
+              <strong>Feature development</strong>: Work on a new feature in
+              isolation.
+            </li>
+            <li>
+              <strong>Bug fixes</strong>: Fix bugs without interrupting ongoing
+              work.
+            </li>
+            <li>
+              <strong>Collaboration</strong>: Multiple developers can work on
+              different branches and merge their changes later.
+            </li>
+          </ul>
+          <p>
+            Once the work on a branch is complete and tested, it can be
+            <strong>merged</strong> back into the main branch. This process
+            helps maintain code stability and allows for parallel development.
+          </p>
+        </span>
+        <label for="read-more-toggle-3" class="read-more-btn"></label>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <span>Contact <a href="mailto:abc@abc.com">abc@abc.com</a></span>
+    <span> &copy; All rights reserved</span>
+  </footer>
+</html>
