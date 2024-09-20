@@ -25,13 +25,39 @@
 @media only screen and (max-width: 800px) {
   /* nav to menu */
   .main-nav {
-    padding: 5rem;
-    flex-wrap: wrap;
-    align-content: center;
+    padding: 0;
+    height: 0;
   }
+
   .main-nav-list {
-    gap: 3rem;
-    flex-wrap: wrap;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-light-color);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+
+  .main-nav-list li {
+    margin: 1rem 0;
+  }
+
+  .menu-icon {
+    display: block;
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+    z-index: 1000;
+  }
+
+  /* When the checkbox is checked, show the menu */
+  .menu-toggle:checked + .menu-icon + .main-nav-list {
+    display: flex;
   }
   /* nav to menu end */
 
@@ -39,6 +65,7 @@
     font-size: 2.2em;
     max-width: 60%;
     line-height: 1.2;
+    margin: 0 2.5rem;
   }
   .featured-heading {
     margin-bottom: 0;

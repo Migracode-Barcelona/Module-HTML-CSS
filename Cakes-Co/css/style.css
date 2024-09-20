@@ -67,6 +67,22 @@
   color: var(--grey-color-2);
 }
 
+.menu-icon {
+  display: none;
+  font-size: 2.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--cta-color);
+  background-color: var(--main-color-2);
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
 /* ************ */
 /* Hero section */
 /* ************ */
