@@ -157,6 +157,11 @@
   overflow: hidden;
 }
 
+.cta .heading-secondary {
+  color: var(--cta-color);
+  margin-bottom: 3rem;
+}
+
 .cta-img-box {
   background-image: linear-gradient(
       to right bottom,
@@ -166,4 +171,15 @@
     url(../imgs/cta-image.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: var(--cta-color);
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
 }
