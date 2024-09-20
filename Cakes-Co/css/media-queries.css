@@ -40,6 +40,13 @@
     max-width: 60%;
     line-height: 1.2;
   }
+  .featured-heading {
+    margin-bottom: 0;
+  }
+  .featured-section {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2.4rem;
+  }
   .section-cta {
     padding: 3rem 0 5.6rem 0;
   }
