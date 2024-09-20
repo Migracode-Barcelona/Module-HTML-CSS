@@ -13,12 +13,16 @@
 }
 
 .site-description {
-  font-size: 3em;
-  /* color: var(--grey-color-1); */
+  font-size: 2.6em;
   color: var(--main-color-2);
   font-weight: 700;
+  text-transform: capitalize;
   text-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
 }
+
+/* ******* */
+/* Nav Bar */
+/* ******* */
 
 .main-nav {
   max-width: 96%;
@@ -50,8 +54,9 @@
   border-radius: 0.5rem;
   color: var(--main-color-2);
   font-weight: 500;
-  display: inline-block;
+  text-transform: uppercase;
   text-decoration: none;
+  display: inline-block;
   transition: transform 0.1s ease;
 }
 
@@ -59,11 +64,14 @@
   transform: scale(1.05);
 }
 
+/* ************ */
 /* Hero section */
+/* ************ */
+
 .hero-section {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
   background-color: var(--main-light-color);
   border-radius: 0 0.5rem 0.5rem 0;
 }
@@ -92,8 +100,14 @@
   line-height: 1.5em;
 }
 
+/* **************** */
+/* Featured Section */
+/* **************** */
+
 .featured-heading {
+  color: var(--main-color-2);
   text-align: center;
+  text-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.15);
 }
 
 .featured-section {
@@ -117,4 +131,39 @@
 
 .featured-image img:hover {
   transform: scale(1.15);
+}
+
+/* *********** */
+/* CTA Section */
+/* *********** */
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem 0;
+}
+
+.cta {
+  background-color: var(--main-color-2);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 1.1rem;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  background-image: linear-gradient(
+    to right bottom,
+    var(--shade-dark),
+    var(--main-color-2)
+  );
+  overflow: hidden;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url(../imgs/cta-image.jpg);
+  background-size: cover;
+  background-position: center;
 }

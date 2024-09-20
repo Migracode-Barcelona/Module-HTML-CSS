@@ -6,7 +6,7 @@
   --main-color-2: #e67e22;
 
   /* Shades */
-  --shade-dark: #cf711f;
+  --shade-dark: #eb984e;
   --shade-light: #ddd;
 
   /* Greys */
@@ -67,7 +67,7 @@ body {
 .heading-secondary {
   font-size: 4rem;
   line-height: 1.2;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2rem;
 }
 
 hr {
