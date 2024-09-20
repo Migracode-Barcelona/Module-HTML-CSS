@@ -76,3 +76,33 @@ hr {
   margin: 5rem auto;
   opacity: 0.4;
 }
+
+/* select list first option styling */
+select {
+  font-style: italic;
+}
+
+select:focus option,
+select option {
+  font-style: normal;
+}
+
+select:valid {
+  font-style: normal;
+}
+
+/* Button styling */
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  border-radius: 0.9rem;
+  padding: 1.6rem 3.2rem;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
