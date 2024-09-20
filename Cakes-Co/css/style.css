@@ -91,3 +91,22 @@
   margin-top: 1.5rem;
   line-height: 1.5em;
 }
+
+.featured-heading {
+  text-align: center;
+}
+
+.featured-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  flex: 1 1 300px;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+
+.featured-image {
+  max-width: 28rem;
+  height: auto;
+  border-radius: 0.5rem;
+}
