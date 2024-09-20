@@ -22,13 +22,13 @@ Make sure that all elements are visible and functional on both mobile and deskto
 
 ## Acceptance Criteria
 
-- [ ] The webpage is responsive and follows the Mobile First approach
-- [ ] The layout adapts appropriately for larger screens using media queries
-- [ ] Fonts and colors are selected appropriately and cake pictures are visually appealing
-- [ ] The webpage includes hover effects to add interactivity
-- [ ] All elements are visible and function as intended on both mobile and desktop devices according to the wireframes
-- [ ] Your page scores 100 on Lighthouse Accessibility
-- [ ] Your site is deployed to Netlify and the link is included in your PR message.
+- [x] The webpage is responsive and follows the Mobile First approach
+- [x] The layout adapts appropriately for larger screens using media queries
+- [x] Fonts and colors are selected appropriately and cake pictures are visually appealing
+- [x] The webpage includes hover effects to add interactivity
+- [x] All elements are visible and function as intended on both mobile and desktop devices according to the wireframes
+- [x] Your page scores 100 on Lighthouse Accessibility
+- [x] Your site is deployed to Netlify and the link is included in your PR message.
 
 ## Tips for success
 
