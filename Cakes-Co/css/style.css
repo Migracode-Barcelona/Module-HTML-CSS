@@ -48,7 +48,8 @@
   padding-right: 2.5rem;
 }
 
-.main-nav-link {
+.main-nav-link:link,
+.main-nav-link:visited {
   background-color: var(--main-color);
   padding: 0.3rem 2.5rem;
   border-radius: 0.5rem;
@@ -60,8 +61,10 @@
   transition: transform 0.1s ease;
 }
 
-.main-nav-link:hover {
+.main-nav-link:hover,
+.main-nav-link:active {
   transform: scale(1.05);
+  color: var(--grey-color-2);
 }
 
 /* ************ */
@@ -234,9 +237,81 @@
 
 .footer-section {
   padding: 6rem 0;
+  margin: 0 auto;
 }
 
 .footer {
   display: grid;
-  grid-template-columns: 1.5fr 1.5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  /* align-items: center; */
+  /* gap: 5rem; */
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.social-links {
+  list-style-type: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: var(--grey-color-4);
+}
+
+.address-col {
+  align-self: center;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.made-by {
+  align-self: end;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: var(--grey-color-4);
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: var(--grey-color-2);
 }
