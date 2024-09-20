@@ -42,6 +42,13 @@ body {
   color: var(--grey-color-4);
 }
 
+/* container sizing */
+.container {
+  max-width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
 /* Headings sizing */
 .heading-primary,
 .heading-secondary,
