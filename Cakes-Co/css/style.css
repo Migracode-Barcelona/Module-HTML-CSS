@@ -97,16 +97,24 @@
 }
 
 .featured-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  flex: 1 1 300px;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
   margin-bottom: 5rem;
 }
 
 .featured-image {
-  max-width: 28rem;
-  height: auto;
+  overflow: hidden;
   border-radius: 0.5rem;
+}
+
+.featured-image img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.featured-image img:hover {
+  transform: scale(1.15);
 }
