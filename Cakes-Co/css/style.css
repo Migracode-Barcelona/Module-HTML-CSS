@@ -253,8 +253,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  /* align-items: center; */
-  /* gap: 5rem; */
 }
 
 .logo-col {
@@ -284,6 +282,7 @@
   font-size: 1.4rem;
   line-height: 1.6rem;
   color: var(--grey-color-4);
+  text-align: center;
 }
 
 .address-col {
@@ -296,14 +295,14 @@
   margin-bottom: 4rem;
 }
 
+.address {
+  margin-bottom: 2.4rem;
+}
+
 .contacts {
   font-size: 1.6rem;
   font-style: normal;
   line-height: 1.6;
-}
-
-.address {
-  margin-bottom: 2.4rem;
 }
 
 .made-by {
