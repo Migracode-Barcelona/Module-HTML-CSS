@@ -1,0 +1,30 @@
+/* Reset everything */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors defined */
+:root {
+  --default-text-color: #555;
+}
+
+/* Set default font size to 10px */
+html {
+  font-size: 62.5%;
+}
+
+/* Setting defaults for body */
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--default-text-color);
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
