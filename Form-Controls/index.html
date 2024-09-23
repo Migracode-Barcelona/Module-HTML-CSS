@@ -10,25 +10,88 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="styles.css" />
+
+    <link rel="icon" href="img/favicon.png" type="image/png" />
   </head>
   <body>
-    <header>
-      <h1>Build Your Ideal Wardrobe Here</h1>
+    <header class="header">
+      <a href="#">
+        <img src="img/logo.png" class="logo" alt="t-shirt logo" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#" class="main-nav-link">Categories</a></li>
+          <li>
+            <a href="#" class="main-nav-link">Size Guide</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">FAQ</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Login</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link nav-cta">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+
     <main>
       <div class="container">
-        <form>
-          <!-- write your html here-->
-          <!-- try writing out the requirements first-->
+        <h1 class="heading-primary">Build Your Ideal Wardrobe Here</h1>
+        <form action="/submit-order" method="post">
+          <label for="name">What is the customer's name? (required)</label
+          ><br />
+          <input type="text" id="name" name="name" required /><br />
+
+          <label for="email">What is the customer's email? (required)</label
+          ><br />
+          <input type="email" id="email" name="email" required /><br />
+
+          <label for="color"
+            >What color should this t-shirt be? (required)</label
+          ><br />
+          <select id="color" name="color" required>
+            <option value="">Select a color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option></select
+          ><br />
+
+          <label for="size">What size does the customer want? (required)</label
+          ><br />
+          <select id="size" name="size" required>
+            <option value="">Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option></select
+          ><br />
+
+          <label for="deliveryDate"
+            >When do they want the t-shirt to be delivered? (required)</label
+          ><br />
+          <input
+            type="date"
+            id="deliveryDate"
+            name="deliveryDate"
+            required
+          /><br />
+
+          <input type="submit" value="Submit Order" />
         </form>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <!-- change to your name-->
       <h2>By Umair</h2>
     </footer>
