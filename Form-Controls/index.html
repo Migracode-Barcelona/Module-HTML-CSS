@@ -24,7 +24,7 @@
         <img src="img/logo.png" class="logo" alt="t-shirt logo" />
       </a>
 
-      <nav class="main-nav">
+      <div class="main-nav">
         <ul class="main-nav-list">
           <li><a href="#" class="main-nav-link">Categories</a></li>
           <li>
@@ -40,55 +40,81 @@
             <a href="#" class="main-nav-link nav-cta">Contact Us</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
 
-    <main>
-      <div class="container">
-        <h1 class="heading-primary">Build Your Ideal Wardrobe Here</h1>
-        <form action="/submit-order" method="post">
-          <label for="name">Full Name? *</label><br />
-          <input type="text" id="name" name="name" required /><br />
+    <section class="container">
+      <div class="cta-container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h1 class="heading-primary">Build Your Ideal Wardrobe Here</h1>
+            <p class="cta-text">
+              Our t-shirts are more than just clothing—they’re an expression of
+              who you are. Fill out the form and let us help you wear your
+              story.
+            </p>
+          </div>
+          <form action="/submit-order" class="cta-form" method="post">
+            <div>
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
 
-          <label for="email">Email? *</label><br />
-          <input type="email" id="email" name="email" required /><br />
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
 
-          <label for="color">Color *</label><br />
-          <select id="color" name="color" required>
-            <option value="">Select a color</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option></select
-          ><br />
+            <div>
+              <label for="color">Choose Color</label>
+              <select id="color" name="color" required>
+                <option value="">Select a color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+              </select>
+            </div>
 
-          <label for="size">Size *</label><br />
-          <select id="size" name="size" required>
-            <option value="">Select a size</option>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option></select
-          ><br />
+            <div>
+              <label for="size">Select Size</label>
+              <select id="size" name="size" required>
+                <option value="">Select a size</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </div>
 
-          <label for="deliveryDate"
-            >When do you want the t-shirt to be delivered? *</label
-          ><br />
-          <input
-            type="date"
-            id="deliveryDate"
-            name="deliveryDate"
-            required
-          /><br />
+            <div>
+              <label for="deliveryDate"
+                >When do you want the t-shirt to be delivered?</label
+              ><br />
+              <input
+                type="date"
+                id="deliveryDate"
+                name="deliveryDate"
+                required
+              />
+            </div>
 
-          <button type="submit">Submit Order</button>
-        </form>
+            <button type="submit">Submit Order</button>
+          </form>
+        </div>
+
+        <div
+          class="cta-img-box"
+          role="img"
+          aria-label="Clothing Wardrobe"
+        ></div>
       </div>
-    </main>
+    </section>
+
     <footer class="footer">
       <!-- change to your name-->
-      <h2>By Umair</h2>
+      <h4 class="footer-heading">By Umair</h4>
     </footer>
   </body>
 </html>
