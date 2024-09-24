@@ -44,7 +44,7 @@
   list-style-type: none;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   gap: 3rem;
 }
 
