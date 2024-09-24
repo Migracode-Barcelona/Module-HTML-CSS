@@ -6,6 +6,7 @@
   background-color: var(--main-color);
   height: 14rem;
   padding: 0 5rem;
+  margin-bottom: 2rem;
 }
 
 .logo {
@@ -18,6 +19,7 @@
   font-weight: 700;
   text-transform: capitalize;
   text-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
+  margin: 0 2rem;
 }
 
 /* ******* */
@@ -25,17 +27,16 @@
 /* ******* */
 
 .main-nav {
-  max-width: 96%;
+  max-width: 120rem;
+  width: 90%;
   display: flex;
   align-items: center;
   background-color: var(--main-light-color);
   height: 3rem;
   padding: 2.5rem;
-  margin: 2rem 0;
-  margin-left: auto;
-  margin-right: 0;
-  border-radius: 1rem 0 0 1rem;
-  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  border-radius: 2rem;
+  box-shadow: 0.1rem 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
 }
 
 .main-nav-list {
@@ -43,9 +44,8 @@
   list-style-type: none;
   width: 100%;
   display: flex;
-  justify-content: end;
-  gap: 6rem;
-  /* padding-right: 2.5rem; */
+  justify-content: center;
+  gap: 3rem;
 }
 
 .main-nav-link:link,
@@ -93,6 +93,7 @@
   margin-bottom: 8rem;
   background-color: var(--main-light-color);
   border-radius: 0 0.5rem 0.5rem 0;
+  margin-top: 2rem;
 }
 
 .hero-image-container {
