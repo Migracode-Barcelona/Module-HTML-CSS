@@ -47,17 +47,13 @@
       <div class="container">
         <h1 class="heading-primary">Build Your Ideal Wardrobe Here</h1>
         <form action="/submit-order" method="post">
-          <label for="name">What is the customer's name? (required)</label
-          ><br />
+          <label for="name">Full Name? *</label><br />
           <input type="text" id="name" name="name" required /><br />
 
-          <label for="email">What is the customer's email? (required)</label
-          ><br />
+          <label for="email">Email? *</label><br />
           <input type="email" id="email" name="email" required /><br />
 
-          <label for="color"
-            >What color should this t-shirt be? (required)</label
-          ><br />
+          <label for="color">Color *</label><br />
           <select id="color" name="color" required>
             <option value="">Select a color</option>
             <option value="red">Red</option>
@@ -65,8 +61,7 @@
             <option value="green">Green</option></select
           ><br />
 
-          <label for="size">What size does the customer want? (required)</label
-          ><br />
+          <label for="size">Size *</label><br />
           <select id="size" name="size" required>
             <option value="">Select a size</option>
             <option value="XS">XS</option>
@@ -78,7 +73,7 @@
           ><br />
 
           <label for="deliveryDate"
-            >When do they want the t-shirt to be delivered? (required)</label
+            >When do you want the t-shirt to be delivered? *</label
           ><br />
           <input
             type="date"
@@ -87,7 +82,7 @@
             required
           /><br />
 
-          <input type="submit" value="Submit Order" />
+          <button type="submit">Submit Order</button>
         </form>
       </div>
     </main>
