@@ -64,7 +64,7 @@ body {
 }
 
 .main-nav-list {
-  font-size: 1.6rem;
+  font-size: 2rem;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -97,7 +97,6 @@ body {
   margin: 0 auto;
   color: var(--color-text);
   background-color: #e6f7ff7c;
-  /* height: 75vh; */
 }
 
 .container::before {
@@ -144,13 +143,13 @@ body {
 }
 
 .cta-text-box {
-  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  padding: 4rem 6rem 4rem 6rem;
 }
 
 .cta-text {
   font-size: 1.8rem;
   line-height: 1.8;
-  margin-bottom: 4.8rem;
+  font-weight: 500;
 }
 
 .cta-form {
@@ -163,6 +162,26 @@ body {
 
 .cta-form label {
   display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.8rem;
+  background-color: #ffffff;
+  border-radius: 9px;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
 }
 
 .cta-img-box {
@@ -174,6 +193,37 @@ body {
     url(img/cta-image.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(148, 148, 148, 0.5);
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  transition: all 0.3s;
+
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: var(--color-text-bg-card);
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #333;
 }
 
 /* ************** */
