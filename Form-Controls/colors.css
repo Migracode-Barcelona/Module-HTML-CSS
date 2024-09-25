@@ -1,0 +1,92 @@
+option[value="red"] {
+  background-color: #ff4d4d; /* Red */
+  background-image: radial-gradient(circle, #ff4d4d 50%, transparent 51%);
+}
+option[value="blue"] {
+  background-color: #365af7; /* Sky Blue */
+  background-image: radial-gradient(circle, #87ceeb 50%, transparent 51%);
+}
+option[value="green"] {
+  background-color: #98ff98; /* Mint */
+  background-image: radial-gradient(circle, #98ff98 50%, transparent 51%);
+}
+option[value="yellow"] {
+  background-color: #ffdb58; /* Mustard Yellow */
+  background-image: radial-gradient(circle, #ffdb58 50%, transparent 51%);
+}
+option[value="black"] {
+  background-color: #000000; /* Black */
+  color: white; /* Text color for better visibility */
+  background-image: radial-gradient(circle, #000000 50%, transparent 51%);
+}
+option[value="white"] {
+  background-color: #ffffff; /* White */
+  color: black; /* Text color for better visibility */
+  background-image: radial-gradient(circle, #ffffff 50%, transparent 51%);
+}
+option[value="purple"] {
+  background-color: #800080; /* Purple */
+  background-image: radial-gradient(circle, #800080 50%, transparent 51%);
+}
+option[value="orange"] {
+  background-color: #ff6f61; /* Coral */
+  background-image: radial-gradient(circle, #ff6f61 50%, transparent 51%);
+}
+option[value="pink"] {
+  background-color: #ffb6c1; /* Blush */
+  background-image: radial-gradient(circle, #ffb6c1 50%, transparent 51%);
+}
+option[value="gray"] {
+  background-color: #808080; /* Gray */
+  background-image: radial-gradient(circle, #808080 50%, transparent 51%);
+}
+option[value="coral"] {
+  background-color: #ff6f61; /* Coral */
+  background-image: radial-gradient(circle, #ff6f61 50%, transparent 51%);
+}
+option[value="sky-blue"] {
+  background-color: #87ceeb; /* Sky Blue */
+  background-image: radial-gradient(circle, #87ceeb 50%, transparent 51%);
+}
+option[value="mint"] {
+  background-color: #98ff98; /* Mint */
+  background-image: radial-gradient(circle, #98ff98 50%, transparent 51%);
+}
+option[value="lavender"] {
+  background-color: #e6e6fa; /* Lavender */
+  background-image: radial-gradient(circle, #e6e6fa 50%, transparent 51%);
+}
+option[value="blush"] {
+  background-color: #ffb6c1; /* Blush Pink */
+  background-image: radial-gradient(circle, #ffb6c1 50%, transparent 51%);
+}
+option[value="mustard"] {
+  background-color: #ffdb58; /* Mustard Yellow */
+  background-image: radial-gradient(circle, #ffdb58 50%, transparent 51%);
+}
+option[value="emerald"] {
+  background-color: #50c878; /* Emerald Green */
+  background-image: radial-gradient(circle, #50c878 50%, transparent 51%);
+}
+option[value="navy"] {
+  background-color: #000080; /* Navy Blue */
+  color: white; /* Text color for better visibility */
+  background-image: radial-gradient(circle, #000080 50%, transparent 51%);
+}
+option[value="rose-gold"] {
+  background-color: #b76e79; /* Rose Gold */
+  background-image: radial-gradient(circle, #b76e79 50%, transparent 51%);
+}
+option[value="peach"] {
+  background-color: #ffdab9; /* Peach */
+  background-image: radial-gradient(circle, #ffdab9 50%, transparent 51%);
+}
+option[value="teal"] {
+  background-color: #008080; /* Teal */
+  background-image: radial-gradient(circle, #008080 50%, transparent 51%);
+}
+option[value="burgundy"] {
+  background-color: #800020; /* Burgundy */
+  color: white; /* Text color for better visibility */
+  background-image: radial-gradient(circle, #800020 50%, transparent 51%);
+}
