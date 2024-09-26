@@ -59,7 +59,7 @@
           <form action="/submit-order" class="cta-form" method="post">
             <div>
               <label for="name">Full Name:</label>
-              <input type="text" id="name" name="name" required />
+              <input type="text" id="name" name="name" minlength="3" required />
             </div>
 
             <div>
@@ -110,15 +110,10 @@
             </div>
 
             <div>
-              <label for="deliveryDate"
+              <label for="date"
                 >When do you want the t-shirt to be delivered?</label
               ><br />
-              <input
-                type="date"
-                id="deliveryDate"
-                name="deliveryDate"
-                required
-              />
+              <input type="date" id="date" name="date" required />
             </div>
 
             <button class="btn" type="submit">Submit Order</button>
@@ -134,8 +129,21 @@
     </section>
 
     <footer class="footer">
-      <!-- change to your name-->
-      <h4 class="footer-heading">By Umair</h4>
+      <h4 class="footer-heading">Made By Umair</h4>
     </footer>
+
+    <script>
+      // Get today's date
+      let today = new Date().toISOString().split("T")[0];
+
+      // Calculate the date 4 weeks from today
+      let maxDate = new Date();
+      maxDate.setDate(maxDate.getDate() + 28);
+      maxDate = maxDate.toISOString().split("T")[0];
+
+      // Set the min and max attributes for the date input
+      document.getElementById("date").setAttribute("min", today);
+      document.getElementById("date").setAttribute("max", maxDate);
+    </script>
   </body>
 </html>
