@@ -22,19 +22,19 @@ Live demo here: https://www.wix.com/website-template/view/html/1995
 
 ### Fonts
 
-**Headings:** Fjalla One - Regular 400  
-https://fonts.google.com/specimen/Fjalla+One  
-**Subheadings:** Outfit - Extra-light 200  
-https://fonts.google.com/specimen/Outfit  
-**Body:** Outfit - Extra-light 200  
+**Headings:** Fjalla One - Regular 400
+https://fonts.google.com/specimen/Fjalla+One
+**Subheadings:** Outfit - Extra-light 200
+https://fonts.google.com/specimen/Outfit
+**Body:** Outfit - Extra-light 200
 https://fonts.google.com/specimen/Outfit
 
 ### Colors
 
-Red Brown: #A05941  
-Green Black: #133032  
-Light Grey: #EDEDEE  
-White: #FFF  
+Red Brown: #A05941
+Green Black: #133032
+Light Grey: #EDEDEE
+White: #FFF
 Transparent White: rgba(0,0,0,0.75)
 
 =====================================
@@ -49,17 +49,17 @@ Live demo here: https://www.wix.com/website-template/view/html/2622
 
 ### Fonts
 
-**Headings:** Poppins - Semi-bold 600  
-https://fonts.google.com/specimen/Poppins  
-**Body:** Quicksand - Light 300  
+**Headings:** Poppins - Semi-bold 600
+https://fonts.google.com/specimen/Poppins
+**Body:** Quicksand - Light 300
 https://fonts.google.com/specimen/Quicksand
 
 ### Colors
 
-Dark beige: #E6DACD  
-Light beige: #F4ECE6  
-Royal blue: #0150FD  
-Black: #000  
+Dark beige: #E6DACD
+Light beige: #F4ECE6
+Royal blue: #0150FD
+Black: #000
 White: #FFF
 
 =====================================
@@ -74,20 +74,20 @@ Live demo here: https://www.wix.com/website-template/view/html/2962
 
 ### Fonts
 
-**Headings and subheadings:** Questrial - Regular 400  
-https://fonts.google.com/specimen/Questrial  
-**Buttons:** Raleway - Regular 400  
-https://fonts.google.com/specimen/Raleway  
-**Body:** Roboto - Light 300  
+**Headings and subheadings:** Questrial - Regular 400
+https://fonts.google.com/specimen/Questrial
+**Buttons:** Raleway - Regular 400
+https://fonts.google.com/specimen/Raleway
+**Body:** Roboto - Light 300
 https://fonts.google.com/specimen/Roboto
 
 ### Colors
 
-Black: #000  
-White: #FFF  
-Lylac: #f5e8ff  
-Light Green: #E6FAC0  
-Medium Green: #5E7D1F  
+Black: #000
+White: #FFF
+Lylac: #f5e8ff
+Light Green: #E6FAC0
+Medium Green: #5E7D1F
 Dark Green: #394B2A
 
 =====================================
