@@ -24,3 +24,20 @@ html {
 body {
   font-family: "Outfit", sans-serif;
 }
+
+.section-header {
+  height: 5rem;
+  border: 1px solid #133032;
+}
+
+.search-icon {
+  height: 2rem;
+}
+
+.login-icon {
+  height: 2rem;
+}
+
+.cart {
+  height: 2rem;
+}
