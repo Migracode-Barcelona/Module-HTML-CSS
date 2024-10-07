@@ -100,6 +100,7 @@
     </header>
 
     <main>
+      <!-- Hero Section -->
       <div class="hero-section">
         <div class="estb-year">
           <span>estb</span>
@@ -107,15 +108,222 @@
           <span>2035</span>
         </div>
 
-        <div class="hero-heading">Prickles & Co</div>
+        <h1 class="hero-heading">Prickles & Co</h1>
 
-        <div class="hero-desc">Bring Nature Indoors</div>
+        <p class="hero-desc">Bring Nature Indoors</p>
         <div>
           <a href="#" class="hero-btn btn">Shop Now</a>
         </div>
       </div>
 
-      <div class="collection-section"></div>
+      <!-- Card Collection Section -->
+      <div class="collection-section">
+        <div class="card-collection">
+          <h3 class="card-heading">Cacti</h3>
+          <div class="horizontal-line"></div>
+          <div>
+            <a class="card-btn btn">Shop Collection</a>
+          </div>
+          <div class="card-imgs">
+            <img src="imgs/card-1.jpg" class="card-img" alt="cacti pot" />
+          </div>
+        </div>
+
+        <div class="card-collection">
+          <h3 class="card-heading">Plants</h3>
+          <div class="horizontal-line"></div>
+          <div>
+            <a class="card-btn btn">Shop Collection</a>
+          </div>
+          <div class="card-imgs">
+            <img src="imgs/card-2.jpg" class="card-img" alt="Plants pot" />
+          </div>
+        </div>
+
+        <div class="card-collection">
+          <h3 class="card-heading">Succulents</h3>
+          <div class="horizontal-line"></div>
+          <div>
+            <a class="card-btn btn">Shop Collection</a>
+          </div>
+          <div class="card-imgs">
+            <img src="imgs/card-3.jpg" class="card-img" alt="Succulents pot" />
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="about-section">
+        <div class="about-text-imgs">
+          <div class="about-text">
+            <h3 class="about-heading">About us</h3>
+            <div class="horizontal-line"></div>
+            <p class="about-desc">
+              I'm a paragraph. Click here to add your own text and edit me. It's
+              easy. Just click “Edit Text” or double click me to add your own
+              content and make changes to the font. Feel free to drag and drop
+              me anywhere you like on your page. I'm a great place for you to
+              tell a story and let your users know a little more about you.
+              <br />
+              This is a great space to write long text about your company and
+              your services. You can use this space to go into a little more
+              detail about your company. Talk about your team and what services
+              you provide.
+            </p>
+          </div>
+
+          <div class="about-imgs">
+            <img
+              src="imgs/about-us-1.jpg"
+              class="about-img"
+              alt="cactus and plants"
+            />
+            <img
+              src="imgs/about-us-2.jpg"
+              class="about-img"
+              alt="green leaf in hand"
+            />
+          </div>
+        </div>
+
+        <div class="buy-online-img">
+          <img
+            src="imgs/buy-online-1.jpg"
+            alt="girl standing with plants in the background"
+          />
+          <div class="buy-online-sec">
+            <p>Buy Online Now & Get 10% Off !</p>
+            <div>
+              <a class="buy-online-btn btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="contact-form">
+        <h3 class="contact-form-heading">For Special Requests & Orders</h3>
+        <form action="">
+          <div class="full-name">
+            <div class="form-group">
+              <label for="first-name">First name *</label>
+              <input type="text" id="first-name" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last name *</label>
+              <input type="text" id="last-name" required />
+            </div>
+          </div>
+
+          <div class="email">
+            <label for="email">
+              Email *
+              <input type="email" id="email" required />
+            </label>
+          </div>
+          <div>
+            <label for="phone">
+              Phone
+              <input type="tel" id="phone" />
+            </label>
+          </div>
+          <div>
+            <label for="message">
+              <div>Message</div>
+              <input type="text" id="message" required />
+            </label>
+          </div>
+
+          <div class="contact-btn">
+            <button type="submit" class="contact-form-btn btn">Send</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Find us Section -->
+      <div class="find-us-section">
+        <!-- Information to find us -->
+        <div class="find-us-info">
+          <div class="find-us-cols">
+            <h3 class="find-us-heading">Our Store</h3>
+            <div class="find-us-info">
+              <p>Address: 500 Terry Francine Street San Francisco, CA 94158</p>
+              <p>Phone: 123-456-7890</p>
+              <p>Email: <a href="mailto:info@mysite.com">info@mysite.com</a></p>
+            </div>
+          </div>
+
+          <div class="find-us-cols">
+            <h3 class="find-us-heading">OPENING HOURS</h3>
+            <div class="find-us-info">
+              <p>Mon - Fri: 7am - 10pm</p>
+              <p>Saturday: 8am - 10pm</p>
+              <p>Sunday: 8am - 11pm</p>
+            </div>
+          </div>
+
+          <div class="find-us-cols">
+            <h3 class="find-us-heading">Help</h3>
+            <div class="find-us-info">
+              <a href="#">Shipping & Returns</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">FAQ</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subscribe to us -->
+        <div class="subscribe-sec">
+          <h3 class="subscribe-heading">Subscribe</h3>
+
+          <label for="subscribe-email"
+            >Enter your email here *
+            <input type="email" id="subscribe-email" />
+          </label>
+
+          <div class="agree-subscribe">
+            <input
+              type="checkbox"
+              name="agree-subscribe"
+              id="agree"
+              value="agree"
+              required
+            />
+            <label for="agree-subscribe">
+              Yes, subscribe me to your newsletter.
+            </label>
+          </div>
+
+          <button type="submit" class="subscribe-btn btn">Subscribe Now</button>
+        </div>
+
+        <!-- Social icons -->
+        <div class="social-icons-sec">
+          <img src="imgs/fb-icon.png" class="social-icon" alt="facebook icon" />
+          <img
+            src="imgs/pinterest-icon.png"
+            class="social-icon"
+            alt="facebook icon"
+          />
+          <img
+            src="imgs/instagram-icon.png"
+            class="social-icon"
+            alt="facebook icon"
+          />
+        </div>
+
+        <!-- Map -->
+        <div class="map-location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.162087845924!2d144.95782931565543!3d-37.81501847975237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1630937580510!5m2!1sen!2sau"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
     </main>
 
     <footer>
