@@ -1,0 +1,26 @@
+/* **Headings:** Fjalla One - Regular 400 */
+/* **Subheadings:** Outfit - Extra-light 200
+**Body:** Outfit - Extra-light 200 */
+
+/* Colors defined*/
+:root {
+  --red-brown: #a05941;
+  --green-black: #133032;
+  --light-grey: #ededee;
+  --white: #fff;
+  --transparent-white: rgba(0, 0, 0, 0.75);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
