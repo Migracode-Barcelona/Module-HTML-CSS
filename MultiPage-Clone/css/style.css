@@ -28,7 +28,7 @@ body {
   background-color: var(--light-grey);
 }
 
-.section-header {
+/* .section-header {
   height: 5rem;
   border: 1px solid #133032;
 }
@@ -43,6 +43,121 @@ body {
 
 .cart {
   height: 2rem;
+} */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+/* Top header section */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.6rem;
+  background-color: var(--white);
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--red-brown);
+}
+
+input[type="text"] {
+  padding: 0.8rem 1.6rem 0.8rem 4.4rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  color: var(--red-brown);
+  width: 100%;
+}
+
+input[type="text"]::placeholder {
+  color: var(--red-brown);
+  opacity: 1;
+  font-size: 1.4rem;
+}
+
+.login-cart {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.login-icon-text {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.login-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--red-brown);
+}
+
+.login-text {
+  font-size: 1.6rem;
+  color: var(--red-brown);
+}
+
+.cart {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--red-brown);
+}
+
+/* 2nd header section */
+.nav-section {
+  background-color: var(--light-grey);
+  color: var(--red-brown);
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.nav-menu .logo {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.nav-menu-list {
+  font-size: 1.6rem;
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu-link:link,
+.nav-menu-link:visited {
+  color: var(--red-brown);
+  text-decoration: none;
+}
+.nav-menu-link:active,
+.nav-menu-link:hover {
+  color: #000;
+  text-decoration: none;
 }
 
 /* Hero Section */
