@@ -23,6 +23,9 @@ html {
 
 body {
   font-family: "Outfit", sans-serif;
+  max-width: 95%;
+  margin: 0 auto;
+  background-color: var(--light-grey);
 }
 
 .section-header {
@@ -40,4 +43,22 @@ body {
 
 .cart {
   height: 2rem;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background-image: url("../imgs/Hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.collection-section {
+  height: 100vh;
+  background-color: #a05941;
 }
