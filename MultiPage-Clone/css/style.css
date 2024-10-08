@@ -140,13 +140,14 @@ input[type="text"]::placeholder {
   font-family: "Fjalla One", sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 .nav-menu-list {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   list-style-type: none;
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .nav-menu-link:link,
@@ -158,6 +159,59 @@ input[type="text"]::placeholder {
 .nav-menu-link:hover {
   color: #000;
   text-decoration: none;
+}
+
+/* Text switching styles */
+.text-slide {
+  position: relative;
+  /* white-space: nowrap; */
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 25rem;
+}
+
+.text-slide span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0s, visibility 0s;
+}
+
+.text-slide .text1 {
+  animation: toggleText1 5s infinite;
+}
+
+.text-slide .text2 {
+  animation: toggleText2 5s infinite;
+}
+
+@keyframes toggleText1 {
+  0%,
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  51%,
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes toggleText2 {
+  0%,
+  50% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  51%,
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 /* Hero Section */
