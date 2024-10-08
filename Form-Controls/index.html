@@ -1,28 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>T-Shirts That Define You!</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link rel="stylesheet" href="colors.css" />
+
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img src="img/logo.png" class="logo" alt="t-shirt logo" />
+      </a>
+
+      <div class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#" class="main-nav-link">Categories</a></li>
+          <li>
+            <a href="#" class="main-nav-link">Size Guide</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">FAQ</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Login</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link nav-cta">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="cta-container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h1 class="heading-primary">Build Your Ideal Wardrobe Here</h1>
+            <p class="cta-text">
+              Our t-shirts are more than just clothing—they’re an expression of
+              who you are. Fill out the form and let us help you wear your
+              story.
+            </p>
+          </div>
+          <form action="/submit-order" class="cta-form" method="post">
+            <div>
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" minlength="3" required />
+            </div>
+
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div>
+              <label for="color">Choose Color</label>
+              <select id="color" name="color" required>
+                <option value="">Select a color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="purple">Purple</option>
+                <option value="green-light">Light Green</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="gray">Gray</option>
+                <option value="coral">Coral</option>
+                <option value="sky-blue">Sky Blue</option>
+                <option value="mint">Mint</option>
+                <option value="lavender">Lavender</option>
+                <option value="blush">Blush Pink</option>
+                <option value="mustard">Mustard Yellow</option>
+                <option value="emerald">Emerald Green</option>
+                <option value="navy">Navy Blue</option>
+                <option value="rose-gold">Rose Gold</option>
+                <option value="peach">Peach</option>
+                <option value="teal">Teal</option>
+                <option value="burgundy">Burgundy</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="size">Select Size</label>
+              <select id="size" name="size" required>
+                <option value="">Select a size</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="date"
+                >When do you want the t-shirt to be delivered?</label
+              ><br />
+              <input type="date" id="date" name="date" required />
+            </div>
+
+            <button class="btn" type="submit">Submit Order</button>
+          </form>
+        </div>
+
+        <div
+          class="cta-img-box"
+          role="img"
+          aria-label="Clothing Wardrobe"
+        ></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h4 class="footer-heading">Made By Umair</h4>
+    </footer>
+
+    <script>
+      // Get today's date
+      let today = new Date().toISOString().split("T")[0];
+
+      // Calculate the date 4 weeks from today
+      let maxDate = new Date();
+      maxDate.setDate(maxDate.getDate() + 28);
+      maxDate = maxDate.toISOString().split("T")[0];
+
+      // Set the min and max attributes for the date input
+      document.getElementById("date").setAttribute("min", today);
+      document.getElementById("date").setAttribute("max", maxDate);
+    </script>
+  </body>
 </html>
