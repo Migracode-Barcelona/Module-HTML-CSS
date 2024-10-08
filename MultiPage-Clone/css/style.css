@@ -63,7 +63,7 @@ body {
   color: var(--red-brown);
 }
 
-input[type="text"] {
+.search input[type="text"] {
   padding: 0.8rem 1.6rem 0.8rem 4.4rem;
   font-size: 1.6rem;
   border: none;
@@ -73,7 +73,7 @@ input[type="text"] {
   width: 100%;
 }
 
-input[type="text"]::placeholder {
+.search input[type="text"]::placeholder {
   color: var(--red-brown);
   opacity: 1;
   font-size: 1.4rem;
@@ -447,14 +447,10 @@ input[type="text"]::placeholder {
   background-attachment: fixed;
   display: flex;
   justify-content: center;
-  align-items: center;
   color: white;
   position: relative;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  padding-top: 12rem;
+  padding-top: 6rem;
   margin-bottom: 5rem;
 }
 
@@ -473,4 +469,101 @@ input[type="text"]::placeholder {
 .contact-form-section > * {
   position: relative;
   z-index: 2;
+}
+
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.6);
+  background-size: cover;
+  max-width: 80rem;
+  width: 100%;
+  padding: 2rem;
+  color: #000;
+  margin-bottom: 5rem;
+}
+
+.contact-form-heading {
+  font-size: 2rem;
+  font-family: "Fjalla One", serif;
+  color: var(--red-brown);
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.form-control {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 2.5rem;
+}
+
+.form-control input {
+  width: 100%;
+}
+
+.form-control input {
+  padding: 0.8rem 0.5rem;
+  font-size: 1.6rem;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: rgb(100, 100, 100);
+  width: 100%;
+}
+
+.form-control input::placeholder {
+  color: var(--red-brown);
+  opacity: 1;
+  font-size: 1.4rem;
+}
+
+.form-control label {
+  display: block;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+
+.first-name {
+  grid-column: 1;
+}
+
+.last-name {
+  grid-column: 2;
+}
+
+.email {
+  grid-row: 2;
+  grid-column: 1 / -1;
+}
+
+.phone {
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.message {
+  grid-row: 4;
+  grid-column: 1 / -1;
+}
+
+.message input {
+  padding-bottom: 12rem;
+}
+
+.contact-btn {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-btn {
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: var(--red-brown);
+  color: #fff;
+  border: none;
 }
