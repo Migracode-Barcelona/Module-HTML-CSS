@@ -1,0 +1,120 @@
+:root {
+  --color-brand--1: #ffb545;
+
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+  --color-light--1: #aaa;
+  --color-light--2: #ececec;
+  --color-light--3: rgb(214, 222, 224);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  color: var(--color-dark--1);
+  font-family: sans-serif;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 3rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+header h1 {
+  color: var(--color-brand--1);
+  text-align: center;
+  text-shadow: var(--color-light--1) 1px 0 10px;
+}
+
+main > *:first-child {
+  padding: 2rem;
+}
+
+.container {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article-image {
+  border-radius: 5px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 20px auto;
+  /* padding-bottom: 2rem; */
+}
+
+.article {
+  padding: 2rem 2rem;
+  border: 0.1rem solid #42484d3f;
+  hyphens: auto;
+}
+
+.article-featured {
+  flex: 1 1 100%;
+  margin-bottom: 5rem;
+}
+
+.article-half-row {
+  flex: 1 1 50%;
+}
+
+.more-text {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .more-text {
+  display: inline;
+}
+
+input[type="checkbox"] ~ .read-more-btn::before {
+  content: "Read More";
+}
+
+input[type="checkbox"]:checked ~ .read-more-btn::before {
+  content: "Read Less";
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.read-more-btn {
+  display: inline-block;
+  background-color: var(--color-brand--1);
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: var(--color-dark--1);
+}
+
+.read-more-btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-dark--2);
+  padding: 0 2rem;
+  margin: 2rem 0;
+}
+footer span a {
+  text-decoration: none;
+  color: var(--color-brand--1);
+  text-shadow: var(--color-light--1) 5px 0 10px;
+}
+
+.indent-list {
+  padding-left: 2.5rem;
+}
