@@ -16,7 +16,6 @@
 
 .btn:link,
 .btn:visited {
-  padding: 1rem 5rem;
   background-color: var(--red-brown);
   color: var(--white);
   text-decoration: none;
