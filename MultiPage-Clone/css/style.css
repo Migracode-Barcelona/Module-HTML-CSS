@@ -688,14 +688,54 @@ body {
   transition: all 0.3s ease;
 }
 
+/* social icons */
+.social-icons-sec {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
 /* ************** */
 /* Footer credits */
 /* ************** */
 .footer {
-  font-size: 1.5rem;
   color: var(--red-brown);
   text-align: center;
   padding: 2rem 0;
   position: relative;
   overflow: hidden;
+}
+
+.footer-text {
+  font-size: 1.8rem;
+}
+
+.by-credit {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  animation: zoom 3s infinite;
+}
+
+/* Keyframe animation for zoom effect */
+@keyframes zoom {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.5);
+    color: var(--red-brown);
+  }
+  75% {
+    transform: scale(1.4);
+    color: var(--green-black);
+  }
+  50% {
+    transform: scale(1.2);
+    color: var(--btn-hover-color);
+  }
+  25% {
+    transform: scale(1);
+    color: var(--btn-hover-green-color);
+  }
 }
