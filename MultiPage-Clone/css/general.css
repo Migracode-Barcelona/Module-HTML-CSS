@@ -13,3 +13,19 @@
   font-weight: 200;
   font-style: normal;
 } */
+
+.btn:link,
+.btn:visited {
+  padding: 1rem 5rem;
+  background-color: var(--red-brown);
+  color: var(--white);
+  text-decoration: none;
+  border: none;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--btn-hover-color);
+  color: #000;
+  transition: all 0.3s ease;
+}
