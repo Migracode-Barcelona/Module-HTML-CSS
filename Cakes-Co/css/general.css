@@ -1,0 +1,108 @@
+/* General styling */
+:root {
+  /* Main colors */
+  --main-color: #fae5d3;
+  --main-light-color: #fdf2e9;
+  --main-color-2: #e67e22;
+  --cta-color: #45260a;
+
+  /* Shades */
+  --shade-dark: #eb984e;
+  --shade-light: #ddd;
+
+  /* Greys */
+  --grey-color-1: #888;
+  --grey-color-2: #555;
+  --grey-color-3: #333;
+  --grey-color-4: #767676; /* (Lightest grey allowed on #fff) */
+  --grey-color-5: #6f6f6f; /* (Lightest grey allowed on #fdf2e9) */
+}
+
+/* Box shadow
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+ */
+
+/* Reset padding and margin for all elements and set box-sizing to border-box */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* set default font size to 10px */
+html {
+  font-size: 62.5%;
+}
+
+/* Default for body */
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--grey-color-4);
+}
+
+/* container sizing */
+.container {
+  max-width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/* Headings sizing */
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: var(--grey-color-5);
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 2.4rem;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+hr {
+  max-width: 50%;
+  margin: 5rem auto;
+  opacity: 0.4;
+}
+
+/* select list first option styling */
+select {
+  font-style: italic;
+}
+
+select:focus option,
+select option {
+  font-style: normal;
+}
+
+select:valid {
+  font-style: normal;
+}
+
+/* Button styling */
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  border-radius: 0.9rem;
+  padding: 1.6rem 3.2rem;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
