@@ -1,5 +1,5 @@
 /* Responsive adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .section-header {
     flex-direction: column;
     align-items: flex-start;
@@ -21,6 +21,111 @@
   .about-img-2,
   .buy-online-image,
   .buy-online-sec {
-    grid-column: 1 / -1; /* Span across all columns */
+    grid-column: 1 / -1;
+  }
+} */
+
+@media only screen and (max-width: 480px) {
+  .find-us-container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .find-us-heading {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+  body {
+    max-width: 100%;
+  }
+  .header {
+    position: static;
+    padding: 0;
+  }
+  .login-icon-text {
+    display: none;
+  }
+  .nav-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 2rem;
+  }
+  .nav-menu .logo {
+    font-size: 2.6rem;
+  }
+  .text-slide {
+    grid-row: 3;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
+    padding: 0;
+  }
+  .nav-menu-list {
+    display: none;
+  }
+  .hero-section {
+    margin-bottom: 2rem;
+  }
+  .hero-heading {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    max-width: 90%;
+  }
+  .hero-desc {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .collection-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .card-collection {
+    width: 100%;
+  }
+  .about-section {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .about-text {
+    padding: 5rem 1rem;
+  }
+  .about-img-1 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .about-img-2 {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .buy-online-image {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .buy-online-sec {
+    grid-row: 5;
+    grid-column: 1;
+    padding: 5rem;
+  }
+  .about-img-1 img,
+  .about-img-2 img,
+  .buy-online-image img {
+    height: 30rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  .buy-online-image img {
+    object-position: bottom;
+  }
+  .find-us-section {
+    margin-top: 5rem;
+    padding: 5rem 0;
+  }
+  .subscribe-sec {
+    padding: 0 2rem;
+  }
+  .agree-subscribe {
+    flex-wrap: wrap;
   }
 }
