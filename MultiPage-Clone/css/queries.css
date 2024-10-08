@@ -10,4 +10,17 @@
     width: 100%;
     margin-top: 1rem;
   }
+
+  .about-section {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .about-text,
+  .about-img-1,
+  .about-img-2,
+  .buy-online-image,
+  .buy-online-sec {
+    grid-column: 1 / -1; /* Span across all columns */
+  }
 }
