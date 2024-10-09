@@ -151,6 +151,10 @@ body {
   text-decoration: none;
 }
 
+.login-icon-text-menu-item {
+  display: none;
+}
+
 /* Text switching styles */
 .text-slide {
   position: relative;
@@ -203,6 +207,19 @@ body {
     opacity: 1;
     visibility: visible;
   }
+}
+
+/* menu icon */
+.menu-icon {
+  display: none;
+  font-size: 3rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--red-brown);
+}
+
+.menu-toggle {
+  display: none;
 }
 
 /* ************ */

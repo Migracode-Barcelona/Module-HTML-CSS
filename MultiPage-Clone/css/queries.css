@@ -116,6 +116,38 @@
     flex-direction: column;
     gap: 5rem;
   }
+
+  /* nav to menu */
+  .nav-menu-list {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f9f9f9;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    padding-top: 3rem;
+    z-index: 999;
+    font-size: 2rem;
+  }
+  .nav-menu-list li {
+    margin: 1rem 0;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 6.2rem;
+    right: 0;
+    z-index: 1000;
+  }
+  /* When the checkbox is checked, show the menu */
+  .menu-toggle:checked + .menu-icon + .nav-menu-list {
+    display: flex;
+  }
+  /* nav to menu end */
 }
 @media only screen and (max-width: 480px) {
   body {
@@ -128,6 +160,9 @@
   .login-icon-text {
     display: none;
   }
+  .login-icon-text-menu-item {
+    display: block;
+  }
   .nav-section {
     display: grid;
     grid-template-columns: 1fr;
@@ -137,15 +172,16 @@
   .nav-menu .logo {
     font-size: 2.6rem;
   }
+  .menu-icon {
+    top: 7rem;
+    right: 2rem;
+  }
   .text-slide {
     grid-row: 3;
     margin-top: 2rem;
     margin-bottom: 2rem;
     letter-spacing: 0.2rem;
     padding: 0;
-  }
-  .nav-menu-list {
-    display: none;
   }
   .hero-section {
     margin-bottom: 2rem;
