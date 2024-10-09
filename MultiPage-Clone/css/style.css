@@ -23,6 +23,7 @@
 /* Set default font size to 10px */
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -145,10 +146,17 @@ body {
   color: var(--red-brown);
   text-decoration: none;
 }
+
 .nav-menu-link:active,
 .nav-menu-link:hover {
   color: #000;
   text-decoration: none;
+}
+
+.logo-link:link,
+.logo-link:visited {
+  text-decoration: none;
+  color: var(--red-brown);
 }
 
 .login-icon-text-menu-item {
