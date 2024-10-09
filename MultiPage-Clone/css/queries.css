@@ -24,16 +24,100 @@
     grid-column: 1 / -1;
   }
 } */
+@media only screen and (max-width: 1150px) and (min-width: 481px) {
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
 
-@media only screen and (max-width: 480px) {
+  .cbtn {
+    margin-top: auto;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .hero-heading {
+    font-size: 9rem;
+    letter-spacing: 1.5rem;
+  }
+  .collection-section {
+    gap: 3rem;
+  }
+  .about-section {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .about-text {
+    padding: 5rem 1rem;
+  }
+  .about-img-1 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .about-img-2 {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .buy-online-image {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .buy-online-sec {
+    grid-row: 5;
+    grid-column: 1;
+    padding: 5rem;
+  }
+  .about-img-1 img,
+  .about-img-2 img,
+  .buy-online-image img {
+    height: 30rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  .buy-online-image img {
+    object-position: bottom;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero-heading {
+    font-size: 7rem;
+    letter-spacing: 1rem;
+  }
+  .card-heading {
+    margin: 2rem 0 1rem;
+  }
+  .horizontal-line {
+    margin-bottom: 2rem;
+  }
+  .card-btn {
+    font-size: 1.4rem;
+    padding: 0.8rem 2rem;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .hero-heading {
+    font-size: 6rem;
+    letter-spacing: 0.8rem;
+  }
+  .card-heading {
+    margin: 2rem 0 1rem;
+    letter-spacing: 0.2rem;
+  }
+  .card-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+  .nav-menu-list {
+    display: none;
+  }
   .find-us-container {
     flex-direction: column;
     gap: 5rem;
   }
-  .find-us-heading {
-    font-size: 1.6rem;
-    margin-bottom: 1.2rem;
-  }
+}
+@media only screen and (max-width: 480px) {
   body {
     max-width: 100%;
   }
@@ -84,48 +168,38 @@
   .card-collection {
     width: 100%;
   }
-  .about-section {
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-  }
-  .about-text {
-    padding: 5rem 1rem;
-  }
-  .about-img-1 {
-    grid-row: 2;
-    grid-column: 1;
-  }
-  .about-img-2 {
-    grid-row: 3;
-    grid-column: 1;
-  }
-  .buy-online-image {
-    grid-row: 4;
-    grid-column: 1;
-  }
-  .buy-online-sec {
-    grid-row: 5;
-    grid-column: 1;
-    padding: 5rem;
-  }
-  .about-img-1 img,
-  .about-img-2 img,
-  .buy-online-image img {
-    height: 30rem;
-    object-fit: cover;
-    object-position: center;
-  }
-  .buy-online-image img {
-    object-position: bottom;
+  .card-btn {
+    font-size: 1.6rem;
+    padding: 1rem 4rem;
   }
   .find-us-section {
     margin-top: 5rem;
     padding: 5rem 0;
+  }
+  .find-us-heading {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
   }
   .subscribe-sec {
     padding: 0 2rem;
   }
   .agree-subscribe {
     flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .hero-heading {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
+  .buy-online-sec {
+    padding: 5rem;
+  }
+  .buy-online-sec p {
+    font-size: 5rem;
+  }
+  .form-control {
+    gap: 1.5rem;
   }
 }
