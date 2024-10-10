@@ -91,6 +91,18 @@
     flex-direction: column;
     gap: 5rem;
   }
+  .form-control {
+    grid-template-columns: 1fr;
+  }
+  .last-name {
+    grid-column: 1;
+  }
+  .last-name,
+  .email,
+  .phone,
+  .message {
+    grid-row: auto;
+  }
 
   /* nav to menu */
   .nav-menu-list {
