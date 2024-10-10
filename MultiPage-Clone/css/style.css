@@ -766,3 +766,10 @@ body {
     color: var(--btn-hover-green-color);
   }
 }
+
+/* **************** */
+/* FAQ Page Styling */
+/* **************** */
+.faq-section {
+  height: 100vh;
+}
