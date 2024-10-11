@@ -26,10 +26,6 @@ window.onscroll = function() {
     }
 };
 
-function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
 // fade-in effects on smaller screens
 document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.fade-in');

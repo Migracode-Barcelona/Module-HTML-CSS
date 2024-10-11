@@ -241,13 +241,11 @@
   /* fade-in effects */
   .sect {
     opacity: 0;
-    transform: translateY(5rem);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition: opacity 1s ease-out;
   }
   /* When the section is visible, apply these styles */
   .fade-in-visible {
     opacity: 1;
-    transform: translateY(0);
   }
   /* fade-in effects end */
 }
