@@ -21,6 +21,7 @@
 }
 
 /* Set default font size to 10px */
+/* Smooth scrolling */
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;

@@ -56,6 +56,9 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  .nav-menu {
+    gap: 0;
+  }
   .hero-heading {
     font-size: 7rem;
     letter-spacing: 1rem;
@@ -135,6 +138,31 @@
     display: flex;
   }
   /* nav to menu end */
+
+  /* Scroll to top */
+  .scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    background-color: var(--red-brown);
+    border: none;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Prevent clicking when not visible */
+  }
+  .scroll-to-top.visible {
+    opacity: 1;
+    pointer-events: auto; /* Allow clicking */
+  }
+  /* Scroll to top end */
 }
 @media only screen and (max-width: 480px) {
   body {
