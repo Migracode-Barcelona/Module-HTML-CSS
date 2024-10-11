@@ -118,13 +118,26 @@
 
     <main>
       <div class="faq-section"></div>
+
+      <!-- Scroll to Top Button -->
+      <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          fill="white"
+        >
+          <path d="M12 2L1 21h22L12 2zm0 3.82l7.79 13.18H4.21L12 5.82z" />
+        </svg>
+      </button>
     </main>
     <footer>
       <!-- Find us Section -->
       <div class="find-us-section">
         <!-- Information to find us -->
         <div class="find-us-container">
-          <div class="find-us-cols">
+          <div class="find-us-cols fade-in sect">
             <h3 class="find-us-heading">Our Store</h3>
             <div class="find-us-info">
               <p>Address: 500 Terry Francine Street San Francisco, CA 94158</p>
@@ -133,7 +146,7 @@
             </div>
           </div>
 
-          <div class="find-us-cols">
+          <div class="find-us-cols fade-in sect">
             <h3 class="find-us-heading">OPENING HOURS</h3>
             <div class="find-us-info">
               <p>Mon - Fri: 7am - 10pm</p>
@@ -142,7 +155,7 @@
             </div>
           </div>
 
-          <div class="find-us-cols">
+          <div class="find-us-cols fade-in sect">
             <h3 class="find-us-heading">Help</h3>
             <div class="find-us-info">
               <a href="#">Shipping & Returns</a>
@@ -153,7 +166,7 @@
         </div>
 
         <!-- Subscribe to us -->
-        <div class="subscribe-sec">
+        <div class="subscribe-sec fade-in sect">
           <h3 class="subscribe-heading">Subscribe</h3>
 
           <div class="subscriber-email">
@@ -177,7 +190,7 @@
         </div>
 
         <!-- Social icons -->
-        <div class="social-icons-sec">
+        <div class="social-icons-sec fade-in sect">
           <a href="">
             <img
               src="imgs/fb-icon.png"
@@ -202,7 +215,7 @@
         </div>
 
         <!-- Map -->
-        <div class="map-location">
+        <div class="map-location fade-in sect">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95780.66762164664!2d2.057788937925226!3d41.39263855851979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!5e0!3m2!1sen!2ses!4v1728494282099!5m2!1sen!2ses"
             width="100%"
@@ -214,7 +227,7 @@
         </div>
       </div>
 
-      <div class="footer">
+      <div class="footer fade-in sect">
         <p class="footer-text">
           This website design was created by Wix.com, and is used here for
           strictly educational purposes.
@@ -222,5 +235,7 @@
         <p class="by-credit">Clone Made by Umair</p>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
