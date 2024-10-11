@@ -19,8 +19,8 @@ window.onscroll = function() {
         // Clear the previous timeout and set a new one to hide the button after 2 seconds
         clearTimeout(hideButtonTimeout);
         hideButtonTimeout = setTimeout(() => {
-            button.classList.remove("visible"); // Remove visible class after 2 seconds
-        }, 2000);
+            button.classList.remove("visible"); // Remove visible class after 1.5 seconds
+        }, 1500);
     } else {
         button.classList.remove("visible"); // Remove visible class immediately
     }
@@ -29,3 +29,25 @@ window.onscroll = function() {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+// fade-in effects on smaller screens
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.fade-in');
+
+  const observerOptions = {
+    threshold: 0.1,
+  };
+
+  const sectionObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach(section => {
+    sectionObserver.observe(section);
+  });
+});
