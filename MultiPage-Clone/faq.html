@@ -18,6 +18,7 @@
     <title>Prickles & Co. | Bringing Green to Your Space</title>
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/faq-style.css" />
     <link rel="stylesheet" href="css/queries.css" />
   </head>
 
@@ -116,21 +117,110 @@
       </div>
     </header>
 
-    <main>
-      <div class="faq-section"></div>
+    <main class="container">
+      <div class="accordion-container">
+        <div class="accordion-headings">
+          <div class="heading-primary-faq">FAQ</div>
+          <div class="horizontal-line"></div>
+          <div class="heading-secondary-faq">Frequently asked questions</div>
+        </div>
+        <!-- Header for Sections -->
+        <div class="accordion-header">
+          <div
+            class="accordion-section"
+            id="general-section"
+            onclick="showSection('general')"
+          >
+            General
+          </div>
+          <div
+            class="accordion-section"
+            id="setup-section"
+            onclick="showSection('setup')"
+          >
+            Setting up FAQs
+          </div>
+        </div>
 
-      <!-- Scroll to Top Button -->
-      <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="24"
-          height="24"
-          fill="white"
-        >
-          <path d="M12 2L1 21h22L12 2zm0 3.82l7.79 13.18H4.21L12 5.82z" />
-        </svg>
-      </button>
+        <!-- General FAQs Section -->
+        <div class="accordion" id="general-accordion" style="display: block">
+          <div class="accordion-item">
+            <div class="accordion-question" onclick="toggleAnswer(this)">
+              What is an FAQ section?
+            </div>
+            <div class="accordion-answer">
+              An FAQ section can be used to quickly answer common questions
+              about your business like "Where do you ship to?", "What are your
+              opening hours?", or "How can I book a service?".
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-question" onclick="toggleAnswer(this)">
+              Why do FAQs matter?
+            </div>
+            <div class="accordion-answer">
+              FAQs are a great way to help site visitors find quick answers to
+              common questions about your business and create a better
+              navigation experience.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-question" onclick="toggleAnswer(this)">
+              Where can I add my FAQs?
+            </div>
+            <div class="accordion-answer">
+              FAQs can be added to any page on your site or to your Wix mobile
+              app, giving access to members on the go.
+            </div>
+          </div>
+        </div>
+
+        <!-- Setting up FAQs Section -->
+        <div class="accordion" id="setup-accordion" style="display: none">
+          <div class="accordion-item">
+            <div class="accordion-question" onclick="toggleAnswer(this)">
+              How do I add a new question & answer?
+            </div>
+            <div class="accordion-answer">
+              To add a new FAQ follow these steps:
+              <span class="numb">
+                <p>1. Manage FAQs from your site dashboard or in the Editor</p>
+                <p>2. Add a new question & answer</p>
+                <p>3. Assign your FAQ to a category</p>
+                <p>4. Save and publish</p>
+              </span>
+              You can always come back and edit your FAQs.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-question" onclick="toggleAnswer(this)">
+              Can I insert an image, video, or GIF in my FAQ?
+            </div>
+            <div class="accordion-answer">
+              Yes. To add media follow these steps:
+              <span>
+                <p>1. Manage FAQs from your site dashboard or in the Editor</p>
+                <p>2. Create a new FAQ or edit an existing one</p>
+                <p>
+                  3. From the answer text box click on the video, image or GIF
+                  icon
+                </p>
+                <p>4. Add media from your library and save</p>
+              </span>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-question" onclick="toggleAnswer(this)">
+              How do I edit or remove the 'Frequently Asked Questions' title?
+            </div>
+            <div class="accordion-answer">
+              You can edit the title from the FAQ 'Settings' tab in the Editor.
+              To remove the title from your mobile app go to the 'Site & App'
+              tab in your Owner's app and customize.
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <!-- Find us Section -->
@@ -236,6 +326,18 @@
       </div>
     </footer>
 
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+        fill="white"
+      >
+        <path d="M12 2L1 21h22L12 2zm0 3.82l7.79 13.18H4.21L12 5.82z" />
+      </svg>
+    </button>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -54,6 +54,10 @@
   .buy-online-image img {
     object-position: bottom;
   }
+  .find-us-container {
+    flex-direction: column;
+    gap: 5rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .nav-menu {
@@ -74,6 +78,12 @@
     padding: 0.8rem 2rem;
   }
 }
+
+@media only screen and (min-width: 691px) {
+  .scroll-to-top {
+    display: none;
+  }
+}
 @media only screen and (max-width: 690px) {
   .hero-heading {
     font-size: 6rem;
@@ -89,10 +99,6 @@
   }
   .nav-menu-list {
     display: none;
-  }
-  .find-us-container {
-    flex-direction: column;
-    gap: 5rem;
   }
   .form-control {
     grid-template-columns: 1fr;

@@ -11,6 +11,7 @@
   --transparent-white: rgba(0, 0, 0, 0.75);
   --btn-hover-color: #d0b0a6;
   --btn-hover-green-color: #3e5a5b;
+  --faq-text-color: #c76848;
 }
 
 /* Reset */
@@ -766,11 +767,4 @@ body {
     transform: scale(1);
     color: var(--btn-hover-green-color);
   }
-}
-
-/* **************** */
-/* FAQ Page Styling */
-/* **************** */
-.faq-section {
-  height: 100vh;
 }
