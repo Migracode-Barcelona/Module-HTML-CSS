@@ -19,8 +19,8 @@ window.onscroll = function () {
     // Clear the previous timeout and set a new one to hide the button after 1.5 seconds of inactivity
     clearTimeout(hideButtonTimeout);
     hideButtonTimeout = setTimeout(() => {
-      button.classList.remove("visible"); // Remove visible class after 1.5 seconds
-    }, 1500);
+      button.classList.remove("visible"); // Remove visible class after 2 seconds
+    }, 2000);
   } else {
     button.classList.remove("visible"); // Remove visible class when scrolled back to top
   }
