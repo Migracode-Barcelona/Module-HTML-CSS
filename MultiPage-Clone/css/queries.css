@@ -58,6 +58,9 @@
     flex-direction: column;
     gap: 5rem;
   }
+  .accordion-container {
+    max-width: 95%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .nav-menu {
@@ -78,7 +81,6 @@
     padding: 0.8rem 2rem;
   }
 }
-
 @media only screen and (min-width: 691px) {
   .scroll-to-top {
     display: none;

@@ -71,8 +71,8 @@ function toggleAnswer(questionElement) {
 
   allAnswers.forEach((answer) => {
     answer.classList.remove("active");
-    answer.style.maxHeight = 0; // Reset max-height to 0 for transition
-    answer.style.opacity = 0; // Reset opacity to 0 for transition
+    answer.style.maxHeight = 0; // Reset max-height for smooth transition
+    answer.style.opacity = 0; // Hide content
   });
 
   allQuestions.forEach((question) => question.classList.remove("active"));
@@ -81,7 +81,7 @@ function toggleAnswer(questionElement) {
   if (!isActive) {
     questionElement.classList.add("active");
     answerElement.classList.add("active");
-    answerElement.style.maxHeight = answerElement.scrollHeight + "px"; // Set max-height to its scroll height for transition
+    answerElement.style.maxHeight = answerElement.scrollHeight + "px"; // Dynamically set height
     answerElement.style.opacity = 1; // Make visible
   }
 }
@@ -100,8 +100,8 @@ function showSection(section) {
   allQuestions.forEach((question) => question.classList.remove("active"));
   allAnswers.forEach((answer) => {
     answer.classList.remove("active");
-    answer.style.maxHeight = 0; // Reset max-height to 0 for transition
-    answer.style.opacity = 0; // Reset opacity to 0 for transition
+    answer.style.maxHeight = 0; // Reset max-height for transition
+    answer.style.opacity = 0; // Reset opacity to 0
   });
 
   // Open the first question of the visible section by default
@@ -129,16 +129,4 @@ function showSection(section) {
 // Set the initial state on page load
 window.onload = function () {
   showSection("general"); // Ensure General FAQs are visible by default
-  // Open the first question of "Setting up FAQs" by default
-  let firstSetupQuestion = document.querySelector(
-    "#setup-accordion .accordion-question"
-  );
-  let firstSetupAnswer = document.querySelector(
-    "#setup-accordion .accordion-answer"
-  );
-
-  firstSetupQuestion.classList.add("active");
-  firstSetupAnswer.classList.add("active");
-  firstSetupAnswer.style.maxHeight = firstSetupAnswer.scrollHeight + "px";
-  firstSetupAnswer.style.opacity = 1;
 };
