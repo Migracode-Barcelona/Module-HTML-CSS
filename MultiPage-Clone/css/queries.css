@@ -1,0 +1,275 @@
+/* Responsive adjustments */
+@media only screen and (max-width: 1150px) and (min-width: 481px) {
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .cbtn {
+    margin-top: auto;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .hero-heading {
+    font-size: 9rem;
+    letter-spacing: 1.5rem;
+  }
+  .collection-section {
+    gap: 3rem;
+  }
+  .about-section {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .about-text {
+    padding: 5rem 1rem;
+  }
+  .about-img-1 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .about-img-2 {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .buy-online-image {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .buy-online-sec {
+    grid-row: 5;
+    grid-column: 1;
+    padding: 5rem;
+  }
+  .about-img-1 img,
+  .about-img-2 img,
+  .buy-online-image img {
+    height: 30rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  .buy-online-image img {
+    object-position: bottom;
+  }
+  .find-us-container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .accordion-container {
+    max-width: 95%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    gap: 0;
+  }
+  .hero-heading {
+    font-size: 7rem;
+    letter-spacing: 1rem;
+  }
+  .card-heading {
+    margin: 2rem 0 1rem;
+  }
+  .horizontal-line {
+    margin-bottom: 2rem;
+  }
+  .card-btn {
+    font-size: 1.4rem;
+    padding: 0.8rem 2rem;
+  }
+}
+@media only screen and (min-width: 691px) {
+  .scroll-to-top {
+    display: none;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .hero-heading {
+    font-size: 6rem;
+    letter-spacing: 0.8rem;
+  }
+  .card-heading {
+    margin: 2rem 0 1rem;
+    letter-spacing: 0.2rem;
+  }
+  .card-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+  .nav-menu-list {
+    display: none;
+  }
+  .form-control {
+    grid-template-columns: 1fr;
+  }
+  .last-name {
+    grid-column: 1;
+  }
+  .last-name,
+  .email,
+  .phone,
+  .message {
+    grid-row: auto;
+  }
+
+  /* nav to menu */
+  .nav-menu-list {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f9f9f9;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    padding-top: 3rem;
+    z-index: 999;
+    font-size: 2rem;
+  }
+  .nav-menu-list li {
+    margin: 1rem 0;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 6.2rem;
+    right: 0;
+    z-index: 1000;
+  }
+  /* When the checkbox is checked, show the menu */
+  .menu-toggle:checked + .menu-icon + .nav-menu-list {
+    display: flex;
+  }
+  /* nav to menu end */
+
+  /* Scroll to top */
+  .scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    background-color: var(--red-brown);
+    border: none;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Prevent clicking when not visible */
+    z-index: 99999;
+  }
+  .scroll-to-top.visible {
+    opacity: 1;
+    pointer-events: auto; /* Allow clicking */
+  }
+  /* Scroll to top end */
+}
+@media only screen and (max-width: 480px) {
+  body {
+    max-width: 100%;
+  }
+  .header {
+    position: static;
+    padding: 0;
+  }
+  .login-icon-text {
+    display: none;
+  }
+  .login-icon-text-menu-item {
+    display: block;
+  }
+  .nav-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 2rem;
+  }
+  .nav-menu .logo {
+    font-size: 2.6rem;
+  }
+  .menu-icon {
+    top: 7rem;
+    right: 2rem;
+  }
+  .text-slide {
+    grid-row: 3;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
+    padding: 0;
+  }
+  .hero-section {
+    margin-bottom: 2rem;
+  }
+  .hero-heading {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    max-width: 90%;
+  }
+  .hero-desc {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .collection-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .card-collection {
+    width: 100%;
+  }
+  .card-btn {
+    font-size: 1.6rem;
+    padding: 1rem 4rem;
+  }
+  .find-us-section {
+    margin-top: 5rem;
+    padding: 5rem 0;
+  }
+  .find-us-heading {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+  .subscribe-sec {
+    padding: 0 2rem;
+  }
+  .agree-subscribe {
+    flex-wrap: wrap;
+  }
+  /* fade-in effects */
+  .sect {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+  /* When the section is visible, apply these styles */
+  .fade-in-visible {
+    opacity: 1;
+  }
+  /* fade-in effects end */
+}
+
+@media only screen and (max-width: 385px) {
+  .hero-heading {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
+  .buy-online-sec {
+    padding: 5rem;
+  }
+  .buy-online-sec p {
+    font-size: 5rem;
+  }
+  .form-control {
+    gap: 1.5rem;
+  }
+}
